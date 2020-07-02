@@ -53,6 +53,7 @@ uploadRouter
   )
   .put(
     cors.corsWithOptions,
+
     authenticate.verifyUser,
     authenticate.verifyAdmin,
     (req, res, next) => {
